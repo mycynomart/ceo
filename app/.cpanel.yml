@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cynomart/public_html
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/chmod 755 $DEPLOYPATH
+    - /bin/find $DEPLOYPATH -type d -exec /bin/chmod 755 '{}' \;
+    - /bin/find $DEPLOYPATH -type f -exec /bin/chmod 644 '{}' \;
+
+hooks:
+  post_deploy:
+    - /usr/local/cpanel/3rdparty/bin/python3 -m pip install -r requirements.txt
+    - /usr/local/cpanel/3rdparty/bin/python3 -m uvicorn main:app --host 0.0.0.0 --port 8000 

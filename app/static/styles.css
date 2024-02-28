@@ -1,0 +1,85 @@
+/* Custom CSS styles */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #343a40 !important; /* Dark gray navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #ffffff !important; /* White color for nav links */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #ffa200; /* Primary color header */
+    padding: 5rem 0;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* About section styles */
+  #about {
+    background-color: #ffffff; /* White background */
+    padding: 4rem 0;
+  }
+  
+  /* Portfolio section styles */
+  #portfolio {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 4rem 0;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    background-color: #ffffff; /* White background */
+    padding: 4rem 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary color button */
+    border-color: #007bff; /* Primary color border */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+    border-color: #0056b3; /* Darker shade of primary color border on hover */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #1362b1; /* Dark gray footer */
+    color: #d2bdbd;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }
+  
